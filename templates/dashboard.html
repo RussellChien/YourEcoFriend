@@ -1,0 +1,22 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Dashboard</title>
+</head>
+<body>
+    <h1>Progress Dashboard</h1>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Progress</th>
+        </tr>
+        {% for task, progress in progress_data.items() %}
+        <tr>
+            <td>{{ task }}</td>
+            <td>{{ progress }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
